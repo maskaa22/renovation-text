@@ -250,6 +250,30 @@ img {
   /* font-family: sans-serif; */
 }
 
+/*VARIETIES*/
+.varieties {
+  padding-top: 40px;
+}
+.text-variant {
+  margin-bottom: 20px;
+}
+.all-varieties {
+  margin-top: 20px;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.text-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #ffffff91;
+  color: black;
+  padding: 15px;
+  max-width: 300px;
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
