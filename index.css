@@ -252,7 +252,9 @@ img {
 
 /*VARIETIES*/
 .varieties,
-.perforation {
+.perforation,
+.advantages,
+.call {
   padding-top: 40px;
 }
 .text-variant {
@@ -284,6 +286,29 @@ img {
 .perforation-item {
   display: flex;
   gap: 10px;
+}
+
+/*ADVANTAGES*/
+.advantages-img-container {
+  width: 60%;
+  margin: 0 auto;
+}
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.advantages-card-title {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+}
+.advantages-card-text {
+  line-height: 126%;
+  text-align: center;
+  color: #666666;
+  margin-top: 10px;
 }
 
 @media only screen and (min-width: 768px) {
