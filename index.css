@@ -251,7 +251,8 @@ img {
 }
 
 /*VARIETIES*/
-.varieties {
+.varieties,
+.perforation {
   padding-top: 40px;
 }
 .text-variant {
@@ -272,6 +273,17 @@ img {
   color: black;
   padding: 15px;
   max-width: 300px;
+}
+
+/*PERFORATION*/
+.perforation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.perforation-item {
+  display: flex;
+  gap: 10px;
 }
 
 @media only screen and (min-width: 768px) {
