@@ -156,6 +156,20 @@ img {
 .servises {
   background-color: #f2f5ff;
 }
+.icon-servises {
+  width: 50px;
+}
+.servises-list {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.servises-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 /*ABOUT*/
 .about {
