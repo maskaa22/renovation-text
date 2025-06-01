@@ -78,11 +78,21 @@
       </section>
       <section id="about" class="about">
         <div class="container">
-          <h2 class="title">Які вони?</h2>
-          <p>
-            Кожна касета - це панель з алюмінію або оцинкованої сталі, що має
-            квадратну форму.
-          </p>
+          <div class="about-iner-container">
+            <img class="about-img" src="/image/about.jpg" />
+            <div>
+              <h2 class="title title-about">Які вони?</h2>
+              <p class="about-text">
+                Кожна касета - це панель з алюмінію або оцинкованої сталі, що
+                має квадратну форму.
+              </p>
+              <p class="about-not-mob about-text">
+                Незважаючи на те, що можливе замовлення касет практично
+                будь-якого кольору, стандартні колірні рішення - це білий,
+                дзеркальні срібний і золотий, срібний «металік».
+              </p>
+            </div>
+          </div>
         </div>
         <p class="title-base-color">Базові кольори</p>
         <div class="base-colore-container">
@@ -101,29 +111,31 @@
               Вони візуально збільшують об'єм кімнати, водночас такі стелі
               підходять для вологого прибирання і безпечні для здоров'я.
             </p>
-            <img src="./image/varientis/mirror.png" />
+            <img src="./image/varientis/mirror.png" class="varientis-img" />
           </div>
           <div class="all-varieties">
             <p class="title-base-color">Інші</p>
-            <div class="image-container">
-              <img src="./image/varientis/metal.png" />
-              <p class="text-overlay">Металеві</p>
-            </div>
-            <div class="image-container">
-              <img src="./image/varientis/slope.png" />
-              <p class="text-overlay">Скляні</p>
-            </div>
-            <div class="image-container">
-              <img src="./image/varientis/gips.png" />
-              <p class="text-overlay">Гіпсові</p>
-            </div>
-            <div class="image-container">
-              <img src="./image/varientis/mineral.png" />
-              <p class="text-overlay">Мінеральні</p>
-            </div>
-            <div class="image-container">
-              <img src="./image/varientis/tree.png" />
-              <p class="text-overlay">З деревини</p>
+            <div class="all-varieties-imgs">
+              <div class="image-container">
+                <img src="./image/varientis/metal.png" />
+                <p class="text-overlay">Металеві</p>
+              </div>
+              <div class="image-container">
+                <img src="./image/varientis/slope.png" />
+                <p class="text-overlay">Скляні</p>
+              </div>
+              <div class="image-container">
+                <img src="./image/varientis/gips.png" />
+                <p class="text-overlay">Гіпсові</p>
+              </div>
+              <div class="image-container">
+                <img src="./image/varientis/mineral.png" />
+                <p class="text-overlay">Мінеральні</p>
+              </div>
+              <div class="image-container">
+                <img src="./image/varientis/tree.png" />
+                <p class="text-overlay">З деревини</p>
+              </div>
             </div>
           </div>
         </div>
@@ -216,7 +228,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li class="advantages-item">
               <div class="advantages-img-container">
                 <img src="./image/advantages/advantages-2.png" />
               </div>
@@ -227,7 +239,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li class="advantages-item">
               <div class="advantages-img-container">
                 <img src="./image/advantages/advantages-3.png" />
               </div>
@@ -244,14 +256,16 @@
       <section id="call" class="call">
         <img src="/image/call/kubichna-rejka.png" />
         <form class="call-form">
-          <h2 class="title">Замовте дзвінок менеджера</h2>
-          <input class="form-input" placeholder="Ім'я" type="text" />
-          <input
-            class="form-input"
-            placeholder="0 99 999 99 99"
-            type="number"
-          />
-          <button class="form-btn">Замовити дзвінок</button>
+          <div class="call-ineer-container-form">
+            <h2 class="title">Замовте дзвінок менеджера</h2>
+            <input class="form-input" placeholder="Ім'я" type="text" />
+            <input
+              class="form-input"
+              placeholder="0 99 999 99 99"
+              type="number"
+            />
+            <button class="form-btn">Замовити дзвінок</button>
+          </div>
         </form>
       </section>
     </main>
@@ -271,10 +285,14 @@
           </div>
           <div class="social">
             <svg class="social-icon">
-              <use href="/image/icon-sprite.svg#icon-facebook-boxed-svgrepo-com"></use>
+              <use
+                href="/image/icon-sprite.svg#icon-facebook-boxed-svgrepo-com"
+              ></use>
             </svg>
             <svg class="social-icon">
-              <use href="/image/icon-sprite.svg#icon-instagram-167-svgrepo-com"></use>
+              <use
+                href="/image/icon-sprite.svg#icon-instagram-167-svgrepo-com"
+              ></use>
             </svg>
             <svg class="social-icon icon-letter">
               <use href="/image/icon-sprite.svg#icon-letter-svgrepo-com"></use>
