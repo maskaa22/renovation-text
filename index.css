@@ -706,9 +706,7 @@ input {
     flex-direction: column;
     justify-content: center;
   }
-  .perforation-img {
-    width: 100%;
-  }
+
   .call-deck {
     width: 60%;
   }
