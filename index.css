@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 *,
 *::before,
 *::after {
@@ -46,7 +49,6 @@ input {
   min-width: 320px;
   max-width: 375px;
   padding: 0 16px;
-  /* margin: 0 auto; */
 }
 
 /*HEADER*/
@@ -84,7 +86,6 @@ input {
   list-style: none;
   text-align: center;
   position: fixed;
-  /* background-color: #fbf3e2; */
   background: linear-gradient(
       rgba(251, 243, 226, 0.7),
       rgba(251, 243, 226, 0.7)
@@ -147,12 +148,18 @@ input {
 .hero-text .hero-deck {
   font-weight: bold;
 }
+
 .hero-btn {
+  position: relative;
   padding: 10px 20px;
   background-color: #054c73;
   color: white;
   border: none;
   margin-top: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.4s ease;
 }
 
 /*SERVISES*/
@@ -349,6 +356,10 @@ input {
   color: white;
   border: none;
   text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: background-color 0.4s ease;
 }
 
 /*FOOTER*/
@@ -404,6 +415,16 @@ input {
   justify-self: end;
 }
 
+.nav-item:hover,
+.nav-item:focus {
+  background-color: rgb(56 56 56 / 80%);
+  color: white;
+}
+.hero-btn:hover,
+.form-btn:hover {
+  background-color: #036099;
+}
+
 @media (max-width: 767px) {
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
@@ -421,14 +442,7 @@ input {
     padding: 0 30px;
   }
   .nav-container {
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-    position: relative;
+    position: static;
     background: transparent;
     z-index: 1000;
     padding: 0;
@@ -447,7 +461,7 @@ input {
   }
   .nav-list {
     display: flex;
-    gap: 20px;
+    gap: 0;
   }
   .hero {
     background-image: url("./image/hero-tab.png");
@@ -592,6 +606,35 @@ input {
       color: white;
     }
   }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    background-color: rgb(56 56 56 / 80%);
+    color: white;
+  }
+  .nav-item {
+    padding: 0;
+  }
+  .nav-link {
+    padding: 20px 10px;
+    cursor: pointer;
+  }
+  .nav-item:hover,
+  .nav-item:focus {
+    background-color: transparent;
+  }
+  .social-icon {
+    cursor: pointer;
+  }
+  .social-icon:hover,
+  .social-icon:focus {
+    background-color: #054c73;
+    fill: white;
+  }
+  .icon-letter:hover,
+  .icon-letter:focus {
+    stroke: white;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -716,5 +759,60 @@ input {
   }
   .advantages-img {
     width: 100%;
+  }
+}
+
+/* Блиск (shine) */
+.hero-btn::before,
+.form-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shine 4s infinite;
+  z-index: 2;
+}
+
+/* Анімація блиску */
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .base-colore {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  /* Стани після активації */
+  .base-colore.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .image-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .image-container.show {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
