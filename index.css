@@ -601,6 +601,7 @@ input {
   }
   .hero {
     background-image: url("./image/hero.jpg");
+    background-size: 100vw;
   }
   .hero-info-block {
     width: 600px;
@@ -683,5 +684,36 @@ input {
   }
   .logo-container .text {
     font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container,
+  .base-colore-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .hero-info-block {
+    left: 22%;
+    top: 34%;
+  }
+  .perforation-img {
+    width: 60%;
+  }
+  .perforation-item ul {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .perforation-img {
+    width: 100%;
+  }
+  .call-deck {
+    width: 60%;
+  }
+  .call-form {
+    justify-content: center;
+    width: 40%;
   }
 }
