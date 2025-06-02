@@ -714,4 +714,7 @@ input {
     justify-content: center;
     width: 40%;
   }
+  .advantages-img {
+    width: 100%;
+  }
 }
