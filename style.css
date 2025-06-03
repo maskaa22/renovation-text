@@ -1,0 +1,201 @@
+html {
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: var(--font-family-inter);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  outline: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.hero {
+  background-color: #054c73;
+  color: white;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-conteiner {
+  max-width: 800px;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+.hero-title {
+  font-size: 30px;
+}
+.text {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.text:last-child {
+  margin-bottom: 0;
+}
+.hero-text {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.about,
+.view,
+.strength {
+  background-color: #f7fbff;
+  padding: 20px 0;
+}
+.installation,
+.perforation,
+.advantages {
+  padding: 20px 0;
+}
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.text-bold {
+  font-weight: bold;
+}
+.perforation-img {
+  width: 100%;
+}
+.perforation-list-info {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+.text-title {
+  margin: 20px 0;
+  text-align: center;
+}
+.text-advantages {
+  background-color: #dceeff;
+  border-left: 3px solid #0070da;
+}
+.strenth-list {
+  padding-left: 20px;
+  text-align: justify;
+}
+.strenth-item {
+  padding: 10px 0;
+}
+.pdf {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 60px;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .text-bold {
+    font-size: 18px;
+  }
+  .perforation-item {
+    display: flex;
+    border: 2px solid black;
+    border-bottom: none;
+  }
+  .perforation-img {
+    width: 30%;
+    padding: 20px;
+    border-right: 2px solid black;
+  }
+  .perforation-item:last-child {
+    border-bottom: 2px solid black;
+  }
+  .perforation-list-info {
+    padding-left: 40px;
+  }
+  .perforation-list-info {
+    margin: 0;
+  }
+  .perforation-container {
+    padding: 10px 0;
+  }
+  .pdf {
+    margin-top: 10px;
+  }
+  .advantages-img {
+    width: 50%;
+  }
+  .advantages-inner-container {
+    display: flex;
+    gap: 20px;
+  }
+  .text-title {
+    text-align: start;
+  }
+}
+@media only screen and (min-width: 1290px) {
+  .hero-title {
+    font-size: 54px;
+  }
+  .container {
+    padding: 0 80px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .perforation-container {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

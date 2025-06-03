@@ -3,352 +3,238 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Geipel</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="ineer-container">
-          <a class="logo" href="#hero">Geipel</a>
-
-          <svg class="burger">
-            <use
-              href="/image/icon-sprite.svg#icon-burger-menu-right-svgrepo-com"
-            ></use>
-          </svg>
-
-          <div class="nav-container">
-            <div class="nav-head-container">
-              <a class="logo-name">Geipel</a>
-              <svg class="close-menu">
-                <use href="/image/icon-sprite.svg#icon-close-svgrepo-com"></use>
-              </svg>
-            </div>
-
-            <nav>
-              <ul class="nav-list">
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">База</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#varieties">Види</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#perforation">Перфорації</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#advantages">Переваги</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#call">Контакти</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
     <main>
-      <section id="hero" class="hero">
-        <div class="hero-info-block">
-          <h1 class="hero-title">Підвісні стелі «Geipel»</h1>
-          <p class="hero-text">
-            Один із видів підвісних стель -
-            <span class="hero-deck">касетна</span> стеля.
-          </p>
-          <p class="hero-display">
-            Стелі цього типу виробництва фірми Geipel - вдале поєднання
-            функціональності, якості та краси.
-          </p>
-          <button class="hero-btn">Замовити</button>
-        </div>
-      </section>
-      <section id="servises" class="servises">
-        <div class="container">
-          <ul class="servises-list">
-            <li class="servises-item">
-              <img src="./image/icons/water-drop.png" class="icon-servises" />
-              <p>Вологостійкість</p>
-            </li>
-            <li class="servises-item">
-              <img
-                src="./image/icons/fire-extinguisher.png"
-                class="icon-servises"
-              />
-              <p>Пожежна безпечність</p>
-            </li>
-            <li class="servises-item">
-              <img src="./image/icons/box.png" class="icon-servises" />
-              <p>Стильність</p>
-            </li>
-            <li class="servises-item">
-              <img src="./image/icons/modern.png" class="icon-servises" />
-              <p>Сучасний вигляд</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section id="about" class="about">
-        <div class="container">
-          <div class="about-iner-container">
-            <img class="about-img" src="./image/about.jpg" />
-            <div>
-              <h2 class="title title-about">Які вони?</h2>
-              <p class="about-text">
-                Кожна касета - це панель з алюмінію або оцинкованої сталі, що
-                має квадратну форму.
-              </p>
-              <p class="about-not-mob about-text">
-                Незважаючи на те, що можливе замовлення касет практично
-                будь-якого кольору, стандартні колірні рішення - це білий,
-                дзеркальні срібний і золотий, срібний «металік».
-              </p>
-            </div>
-          </div>
-        </div>
-        <p class="title-base-color">Базові кольори</p>
-        <div class="base-colore-container">
-          <div class="base-colore base-color-specular">Дзеркальний</div>
-          <div class="base-colore base-color-white">Білий</div>
-          <div class="base-colore base-color-gold">Золотий</div>
-          <div class="base-colore base-color-silver">Срібний</div>
-        </div>
-      </section>
-      <section id="varieties" class="varieties">
-        <div class="container">
-          <h2 class="title">Види касетних стель</h2>
-          <div>
-            <p class="title-base-color">Дзеркальні - найпопулярніші</p>
-
-            <p class="text-variant">
-              Вони візуально збільшують об'єм кімнати, водночас такі стелі
-              підходять для вологого прибирання і безпечні для здоров'я.
+      <section>
+        <div class="hero">
+          <div class="hero-conteiner">
+            <h1 class="hero-title">Підвісні стелі «Geipel»</h1>
+            <p class="hero-text text">
+              Один із видів <strong>підвісних стель -</strong> касетна стеля.
+              Стелі цього типу виробництва фірми Geipel - вдале поєднання
+              функціональності, якості та краси.
+              Вони володіють усіма необхідними характеристиками, зокрема
+              вологостійкістю і пожежною безпекою, а крім того, мають стильний і
+              сучасний вигляд.
             </p>
-            <div class="varieties-mirrors">
-              <img src="./image/varientis/mirror.png" class="varientis-img" />
-              <img src="./image/varientis/mirror-2.png" class="varientis-img" />
-              <img src="./image/varientis/mirror-3.png" class="varientis-img" />
-            </div>
           </div>
-          <div class="all-varieties">
-            <p class="title-base-color">Інші</p>
-            <div class="all-varieties-imgs">
-              <div class="image-container hidden">
-                <img src="./image/varientis/metal.png" />
-                <p class="text-overlay">Металеві</p>
-              </div>
-              <div class="image-container hidden">
-                <img src="./image/varientis/slope.png" />
-                <p class="text-overlay">Скляні</p>
-              </div>
-              <div class="image-container hidden">
-                <img src="./image/varientis/gips.png" />
-                <p class="text-overlay">Гіпсові</p>
-              </div>
-              <div class="image-container hidden">
-                <img src="./image/varientis/mineral.png" />
-                <p class="text-overlay">Мінеральні</p>
-              </div>
-              <div class="image-container hidden">
-                <img src="./image/varientis/tree.png" />
-                <p class="text-overlay">З деревини</p>
-              </div>
-            </div>
+        </div>
+
+        <div class="about">
+          <div class="container">
+            <p class="text">
+              Серед касетних стель виділяються стелі з дзеркальним покриттям, за
+              допомогою яких можна візуально збільшити об'єм кімнати, водночас
+              такі стелі підходять для вологого прибирання і безпечні для
+              здоров'я.
+            </p>
+            <p class="text">
+              Встановити дзеркальну стелю можна в приміщенні будь-якого типу, чи
+              то житловий будинок, чи то офісна будівля, установа медичного або
+              навчального призначення.
+            </p>
+          </div>
+        </div>
+
+        <div class="installation">
+          <div class="container">
+            <p class="text">
+              Модульна конструкція <strong>стелі Geipel</strong> передбачає
+              легкий і зручний монтаж навіть у приміщеннях з великою площею
+              стель, і, що особливо важливо, просту заміну стелі без заміни
+              самої системи - наприклад, якщо касети зазнали якихось пошкоджень.
+              Природно, це дасть змогу уникнути зайвих витрат.
+            </p>
           </div>
         </div>
       </section>
+
+      <section class="view">
+        <div class="container">
+          <h2 class="title">Який вигляд має касетна стеля Geipel?</h2>
+          <p class="text">
+            Кожна касета - це панель з алюмінію або оцинкованої сталі, що має
+            квадратну форму.
+          </p>
+          <p class="text">
+            Незважаючи на те, що можливе замовлення касет практично будь-якого
+            кольору, стандартні колірні рішення - це білий, дзеркальні срібний і
+            золотий, срібний «металік».
+          </p>
+          <p class="text">
+            Покриття касет здійснюється за допомогою якісних фарб, стійкість
+            яких перед вологим або іншим агресивним середовищем дає змогу їм
+            тривалий час залишатися в прекрасному стані.
+          </p>
+          <p class="text">
+            Надійні матеріали здатні витримувати монтаж і демонтаж неодноразово,
+            зберігаючи при цьому свій первісний вигляд.
+          </p>
+          <p class="text">
+            Надійні матеріали здатні витримувати монтаж і демонтаж неодноразово,
+            зберігаючи при цьому свій первісний вигляд.
+          </p>
+        </div>
+      </section>
+
       <section id="perforation" class="perforation">
         <div class="container">
           <h2 class="title">Види перфорації</h2>
-          <ul class="perforation-list">
-            <li class="perforation-item">
+          <p class="text-bold">1. Стандартна перфорація</p>
+          <div class="perforation-list">
+            <div class="perforation-item">
               <img
                 src="./image/perforation/perfor-1.png"
                 class="perforation-img"
               />
-              <ul>
-                <li><strong>Призначення DIN:</strong> Rg 0,70 - 5,00</li>
-                <li><strong>Вид:</strong> отвори 0702</li>
-                <li><strong>Діаметр отвору:</strong> 0,7</li>
-                <li><strong>Відстань:</strong> 5</li>
-                <li>
-                  <strong>Отвори:</strong> радіальні, лінійне розташування
-                </li>
-                <li><strong>Вільний простір:</strong> 1,54 %</li>
-              </ul>
-            </li>
-            <li class="perforation-item">
-              <ul>
-                <li><strong>Призначення DIN:</strong> Rg 1,50 - 4,00</li>
-                <li><strong>Вид:</strong> отвори 1511</li>
-                <li><strong>Діаметр отвору:</strong> 1,5</li>
-                <li><strong>Відстань:</strong> 4</li>
-                <li>
-                  <strong>Отвори:</strong> радіальні, лінійне розташування
-                </li>
-                <li><strong>Вільний простір:</strong> 11,0 %</li>
-              </ul>
+              <div class="perforation-container">
+                <ul class="perforation-list-info">
+                  <li><strong>Призначення DIN:</strong> Rg 0,70 - 5,00</li>
+                  <li><strong>Вид:</strong> отвори 0702</li>
+                  <li><strong>Діаметр отвору:</strong> 0,7</li>
+                  <li><strong>Відстань:</strong> 5</li>
+                  <li>
+                    <strong>Отвори:</strong> радіальні, лінійне розташування
+                  </li>
+                  <li><strong>Вільний простір:</strong> 1,54 %</li>
+                </ul>
+                <p class="pdf">Файл PDF</p>
+              </div>
+            </div>
+            <div class="perforation-item">
               <img
                 src="./image/perforation/perfor-2.png"
                 class="perforation-img"
               />
-            </li>
-            <li class="perforation-item">
+              <div class="perforation-container">
+                <ul class="perforation-list-info">
+                  <li><strong>Призначення DIN:</strong> Rg 1,50 - 4,00</li>
+                  <li><strong>Вид:</strong> отвори 1511</li>
+                  <li><strong>Діаметр отвору:</strong> 1,5</li>
+                  <li><strong>Відстань:</strong> 4</li>
+                  <li>
+                    <strong>Отвори:</strong> радіальні, лінійне розташування
+                  </li>
+                  <li><strong>Вільний простір:</strong> 11,0 %</li>
+                </ul>
+                <p class="pdf">Файл PDF</p>
+              </div>
+            </div>
+            <div class="perforation-item">
               <img
                 src="./image/perforation/perfor-3.png"
                 class="perforation-img"
               />
-              <ul>
-                <li><strong>Призначення DIN:</strong> Rd 1,50 - 2,83</li>
-                <li><strong>Вид:</strong> отвори 1522</li>
-                <li><strong>Діаметр отвору:</strong> 1,5</li>
-                <li><strong>Відстань:</strong> 2,83</li>
-                <li>
-                  <strong>Отвори:</strong> радіальні, лінійне розташування
-                </li>
-                <li><strong>Вільний простір:</strong> 22%</li>
-              </ul>
-            </li>
-            <li class="perforation-item">
-              <ul>
-                <li><strong>Призначення DIN:</strong> Rd Rd 1,80 - 3,52</li>
-                <li><strong>Вид:</strong> отвори 1821</li>
-                <li><strong>Діаметр отвору:</strong> 1,8</li>
-                <li><strong>Відстань:</strong> 3,52</li>
-                <li>
-                  <strong>Отвори:</strong> радіальні, лінійне розташування
-                </li>
-                <li><strong>Вільний простір:</strong> 20,77%</li>
-              </ul>
+              <div class="perforation-container">
+                <ul class="perforation-list-info">
+                  <li><strong>Призначення DIN:</strong> Rd 1,50 - 2,83</li>
+                  <li><strong>Вид:</strong> отвори 1522</li>
+                  <li><strong>Діаметр отвору:</strong> 1,5</li>
+                  <li><strong>Відстань:</strong> 2,83</li>
+                  <li>
+                    <strong>Отвори:</strong> радіальні, лінійне розташування
+                  </li>
+                  <li><strong>Вільний простір:</strong> 22%</li>
+                </ul>
+                <p class="pdf">Файл PDF</p>
+              </div>
+            </div>
+            <div class="perforation-item">
               <img
                 src="./image/perforation/perfor-4.png"
                 class="perforation-img"
               />
-            </li>
-            <li class="perforation-item">
+              <div class="perforation-container">
+                <ul class="perforation-list-info">
+                  <li><strong>Призначення DIN:</strong> Rd Rd 1,80 - 3,52</li>
+                  <li><strong>Вид:</strong> отвори 1821</li>
+                  <li><strong>Діаметр отвору:</strong> 1,8</li>
+                  <li><strong>Відстань:</strong> 3,52</li>
+                  <li>
+                    <strong>Отвори:</strong> радіальні, лінійне розташування
+                  </li>
+                  <li><strong>Вільний простір:</strong> 20,77%</li>
+                </ul>
+                <p class="pdf">Файл PDF</p>
+              </div>
+            </div>
+            <div class="perforation-item">
               <img
                 src="./image/perforation/perfor-5.png"
                 class="perforation-img"
               />
-              <ul>
-                <li><strong>Призначення DIN:</strong> Rg 2,00 - 6,00</li>
-                <li><strong>Вид:</strong> отвори 2009</li>
-                <li><strong>Діаметр отвору:</strong> 2</li>
-                <li><strong>Відстань:</strong> 6</li>
-                <li>
-                  <strong>Отвори:</strong> радіальні, лінійне розташування
-                </li>
-                <li><strong>Вільний простір:</strong> 8,7%</li>
-              </ul>
-            </li>
-          </ul>
+              <div class="perforation-container">
+                <ul class="perforation-list-info">
+                  <li><strong>Призначення DIN:</strong> Rg 2,00 - 6,00</li>
+                  <li><strong>Вид:</strong> отвори 2009</li>
+                  <li><strong>Діаметр отвору:</strong> 2</li>
+                  <li><strong>Відстань:</strong> 6</li>
+                  <li>
+                    <strong>Отвори:</strong> радіальні, лінійне розташування
+                  </li>
+                  <li><strong>Вільний простір:</strong> 8,7%</li>
+                </ul>
+                <p class="pdf">Файл PDF</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
       <section id="advantages" class="advantages">
         <div class="container">
-          <h2 class="title">Переваги</h2>
-          <ul class="advantages-list">
-            <li class="advantages-item">
-              <div class="advantages-img-container">
-                <img
-                  src="./image/advantages/advantages-1.png"
-                  class="advantages-img"
-                />
-              </div>
-              <div class="advantages-card-info">
-                <p class="advantages-card-title">Високоякісні матеріали</p>
-                <p class="advantages-card-text">
-                  Кріплення з оцинкованої сталь і алюмінію, а поверхні блоку
-                  ідеально гладкі
-                </p>
-              </div>
-            </li>
-            <li class="advantages-item">
-              <div class="advantages-img-container">
-                <img
-                  src="./image/advantages/advantages-2.png"
-                  class="advantages-img"
-                />
-              </div>
-              <div class="advantages-card-info">
-                <p class="advantages-card-title">Міцність і надійність</p>
-                <p class="advantages-card-text">
-                  Захищення від корозії та ультрафіолетових променів
-                </p>
-              </div>
-            </li>
-            <li class="advantages-item">
-              <div class="advantages-img-container">
-                <img
-                  src="./image/advantages/advantages-3.png"
-                  class="advantages-img"
-                />
-              </div>
-              <div class="advantages-card-info">
-                <p class="advantages-card-title">Зручність експлуатації</p>
-                <p class="advantages-card-text">
-                  Підходять для явологого прибирання і безпечні для здоров'я
-                </p>
-              </div>
-            </li>
-          </ul>
+          <h2 class="title">Переваги касетної стелі Geipel</h2>
+          <div class="advantages-inner-container">
+            <img src="./image/main.png" class="advantages-img" />
+            <div>
+              <p class="text-title">Рівень якості</p>
+
+              <p class="text text-advantages">
+                Для виробництва підвісних касетних стель Geipel використовують
+                високоякісні метали - оцинковану сталь і алюміній.
+              </p>
+              <p class="text">
+                Товщину металу, яка забезпечує найкращі експлуатаційні
+                властивості касетних стель, визначають за допомогою складних
+                інженерних розрахунків.
+              </p>
+              <p class="text">
+                Поверхні касет у процесі виготовлення надають ідеальної
+                гладкості, що робить стелю особливо функціональною і, звісно,
+                стильною та красивою.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
-      <section id="call" class="call">
-        <img src="./image/call/kubichna-rejka.png" class="call-mob-tab" />
-        <img src="./image/call/kubichna-rejka-deck.webp" class="call-deck" />
-        <form class="call-form">
-          <div class="call-ineer-container-form">
-            <h2 class="title">Замовте дзвінок менеджера</h2>
-            <input class="form-input" placeholder="Ім'я" type="text" />
-            <input
-              class="form-input"
-              placeholder="0 99 999 99 99"
-              type="number"
-            />
-            <button class="form-btn">Замовити дзвінок</button>
-          </div>
-        </form>
+
+      <section class="strength">
+        <div class="container">
+          <h2 class="title">Міцність і надійність</h2>
+          <ol class="strenth-list">
+            <li class="strenth-item">
+              Для виробництва касет Geipel використовується метал, захищений від
+              корозії і здатний витримувати вплив агресивного середовища, тому
+              стелі Geipel служать протягом багатьох років.
+            </li>
+            <li class="strenth-item">
+              Колір касет зберігається протягом усього терміну експлуатації,
+              тому що порошкове покриття, яке наносять на них, стійке до
+              пошкоджень і впливу ультрафіолетових променів.
+            </li>
+            <li class="strenth-item">
+              Касети Geipel з білим покриттям здатні знижувати енерговитрати за
+              рахунок того, що їхня поверхня може розсіювати і відбивати світло,
+              стаючи додатковим джерелом світла.
+            </li>
+          </ol>
+        </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-container">
-          <div class="logo-container">
-            <a class="logo-footer">Geipel</a>
-            <p class="text">Створи свої мрії</p>
-          </div>
 
-          <div class="contacts">
-            <p>Київ</p>
-            <p>вул. Широка, 24</p>
-            <p class="phone">099-999-99-99</p>
-            <p>geipel@gmail.com</p>
-          </div>
-          <div class="social">
-            <svg class="social-icon">
-              <use
-                href="./image/icon-sprite.svg#icon-facebook-boxed-svgrepo-com"
-              ></use>
-            </svg>
-            <svg class="social-icon">
-              <use
-                href="./image/icon-sprite.svg#icon-instagram-167-svgrepo-com"
-              ></use>
-            </svg>
-            <svg class="social-icon icon-letter">
-              <use href="./image/icon-sprite.svg#icon-letter-svgrepo-com"></use>
-            </svg>
-            <svg class="social-icon">
-              <use
-                href="./image/icon-sprite.svg#icon-tik-tok-svgrepo-com"
-              ></use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </footer>
     <script type="module" src="./index.js"></script>
   </body>
 </html>
